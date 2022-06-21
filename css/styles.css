@@ -429,11 +429,11 @@ section h2 {
     display: flex;
 }
 
-.client-list-item:not(:last-child) {
+.client__list-item:not(:last-child) {
     margin-right: 30px;
 }
 
-.client-list-link {
+.client__list-link {
     width: 170px;
     height: 92px;
     display: flex;
@@ -445,8 +445,8 @@ section h2 {
     transition: var(--transition-fill), var(--transition-border);
 }
 
-.client-list-link:hover,
-.client-list-link:focus {
+.client__list-link:hover,
+.client__list-link:focus {
     border-color: var(--accent-color);
     fill: var(--accent-color);
 }
