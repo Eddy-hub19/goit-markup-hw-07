@@ -10,12 +10,12 @@
 .header__top {
     display: flex;
     align-items: center;
-    transition: var($transition-fill), var($transition-color);
+    transition: $transition-fill, $transition-color;
 }
 
-.header__top ul li a:hover,
-.header__top ul li a:focus {
-    color: var($accent-color);
+.header__nav-list-link:hover,
+.header__nav-list-link:focus {
+    color:$accent-color;
     fill: currentColor;
 }
 
@@ -25,47 +25,47 @@
 
 /* .header__nav{} */
 
-.nav__list {
+.header__nav-list {
     display: flex;
 }
 
-.nav__list .nav__list-link {
-    color: var($title-text-color);
+.header__nav-list-link {
+    color: $title-text-color;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     position: relative;
-    transition: var($transition-color);
+    transition: $transition-color;
 }
 
-.nav__list .nav__list-link.current {
-    color: var($accent-color);
-    background: transparent;
-}
-
-.nav__list-item:not(:last-child) {
+.header__nav-list-item:not(:last-child) {
     margin-right: 50px;
 }
 
-.nav__list .nav__list-link.current::after {
+.header__nav-list-item .header__nav-list-link.current {
+    color: $accent-color;
+    background: transparent;
+}
+
+.header__nav-list-item .header__nav-list-link.current::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 4px;
-    background-color: var($accent-color);
+    background-color:$accent-color;
     border-radius: 2px;
     left: 0;
     top: 44px;
 }
 
-.nav__list-link {
-    transition: var($transition-color);
+.header__nav-list-link {
+    transition: $transition-color;
 }
 
-.nav__list-link:hover::after
-.nav__list-link:focus::after {
-    background: var($accent-color);
+.header__nav-list-link:hover::after
+.header__nav-list-link:focus::after {
+    background: $accent-color;
 }
 
 .header__links {
@@ -82,12 +82,18 @@
 .header__link {
     display: flex;
     align-items: center;
-    color: var($primary-color);
+    color: $primary-color;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    transition: var($transition-fill), var($transition-color);
+    transition: $transition-fill, $transition-color;
+}
+
+.header__link:hover,
+.header__link:focus{
+    color:$accent-color;
+    fill: currentColor;
 }
 
 .header__link-icon {
