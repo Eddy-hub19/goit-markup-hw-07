@@ -1,0 +1,33 @@
+
+/* soc-list */
+
+.soc-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.soc__list-item {
+    fill: var(--social-link-fill);
+}
+
+.soc__list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.soc__list-item .soc__list-link:hover,
+.soc__list-item .soc__list-link:focus {
+    fill: var(--light-color);
+    background: var(--accent-color);
+}
+
+.soc__list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--social-link-fill);
+    transition: var(--transition-fill), var(--transition-bg);
+}
