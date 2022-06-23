@@ -2,8 +2,8 @@
 /* client */
 
 .client {
-    padding-top: var(--padding-section);
-    padding-bottom: var(--padding-section);
+    padding-top: var($padding-section);
+    padding-bottom: var($padding-section);
     background: white;
 }
 
@@ -21,14 +21,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #afb1b8;
+    border: 1px solid $social-link-fill;
     border-radius: 4px;
-    fill: var(--social-link-fill);
-    transition: var(--transition-fill), var(--transition-border);
+    fill: var($social-link-fill);
+    transition: var($transition-fill), var($transition-border);
 }
 
 .client__list-link:hover,
 .client__list-link:focus {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
+    border-color: var($accent-color);
+    fill: var($accent-color);
 }

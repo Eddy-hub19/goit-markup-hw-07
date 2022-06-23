@@ -43,7 +43,7 @@
 
 .modal-close:hover,
 .modal-close:focus {
-    fill: var(--accent-color);
+    fill: var($accent-color);
 }
 
 .is-hidden {
@@ -60,7 +60,7 @@
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--title-text-color);
+    color: var($title-text-color);
     margin-bottom: 12px;
 }
 
@@ -74,7 +74,7 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
     margin-bottom: 4px;
-    color: var(--primary-color);
+    color: var($primary-color);
 }
 
 .modal-input-container {
@@ -89,7 +89,7 @@
     display: flex;
     padding-left: 42px;
     outline: none;
-    transition: var(--transition-border);
+    transition: var($transition-border);
 }
 
 .modal-form__icon {
@@ -99,7 +99,7 @@
     transform: translateY(-50%);
     color: black;
     fill: currentColor;
-    transition: var(--transition-color);
+    transition: var($transition-color);
 }
 
 .modal-form__textarea {
@@ -110,7 +110,7 @@
     resize: none;
     outline: none;
     padding: 16px 12px;
-    transition: var(--transition-border);
+    transition: var($transition-border);
 }
 
 .modal-form__textarea::placeholder {
@@ -125,12 +125,12 @@
 .modal-form__textarea:focus,
 .modal-form__input:hover,
 .modal-form__input:focus {
-    border-color: var(--accent-color);
+    border-color: var($accent-color);
 }
 
 .modal-form__input:hover+.modal-form__icon,
 .modal-form__input:focus+.modal-form__icon {
-    color: var(--accent-color);
+    color: var($accent-color);
 }
 
 /* checkbox  */
@@ -151,7 +151,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--primary-color);
+    color: var($primary-color);
 }
 
 .modal-check-icon {
@@ -162,14 +162,14 @@
     color: white;
     justify-content: center;
     margin-right: 7px;
-    border: 2px solid #212121;
+    border: 2px solid $title-text-color;
     border-radius: 2px;
-    transition: var(--transition-color), var(--transition-border), var(--transition-bg);
+    transition: var($transition-color), var($transition-border), var($transition-bg);
     fill: currentColor;
 }
 
 .modal-checkbox:checked+.modal-check__label>.modal-check-icon {
-    background: var(--accent-color);
+    background: var($accent-color);
     border: none;
 }
 
@@ -178,11 +178,11 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--primary-color);
+    color: var($primary-color);
 }
 
 .check-span {
-    color: var(--accent-color);
+    color: var($accent-color);
     text-decoration: underline;
     cursor: pointer;
 }
@@ -196,15 +196,15 @@
     text-align: center;
     letter-spacing: 0.06em;
     padding: 10px 56px;
-    color: var(--light-color);
-    background: var(--accent-color);
+    color: var($light-color);
+    background: var($accent-color);
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     border-radius: 4px;
     border: none;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
-    transition: var(--transition-bg), var(--transition-color);
+    transition: var($transition-bg), var($transition-color);
 }
 
 .modal-form__btn:hover,

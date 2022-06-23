@@ -4,11 +4,11 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--accent-color);
+    color: var($accent-color);
     margin-right: 93px;
 }
 
 .-logo-footer{
-    display: inline-block;
+    display: flex;
     margin-bottom: 20px;
 }
