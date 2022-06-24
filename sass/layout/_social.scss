@@ -5,20 +5,26 @@
     display: flex;
     justify-content: center;
     margin-top: 16px;
+    .soc-list__item {
+        fill: $social-link-fill;
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
 }
+
 
 .soc-list__item {
-    fill: $social-link-fill;
-}
-
-.soc-list__item:not(:last-child) {
-    margin-right: 10px;
-}
-
-.soc-list__item .soc-list__link:hover,
-.soc-list__item .soc-list__link:focus {
-    fill: $light-color;
-    background:$accent-color;
+	.soc-list__link {
+		&:hover {
+			fill: $light-color;
+			background: $accent-color;
+		}
+		&:focus {
+			fill: $light-color;
+			background: $accent-color;
+		}
+	}
 }
 
 .soc-list__link {

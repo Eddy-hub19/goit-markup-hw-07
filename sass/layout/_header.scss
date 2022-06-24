@@ -1,7 +1,7 @@
 /* header */
 
 .header {
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid #ececec;
     padding: 24px 0 24px 0;
 }
 
@@ -30,54 +30,47 @@
     position: relative;
     transition: $transition-color;
     &:hover {
-        color:$accent-color;
-    fill: currentColor;    
+        color: $accent-color;
+        fill: currentColor;
     }
     &:focus {
-        color:$accent-color;
-    fill: currentColor;
-    }   
+        color: $accent-color;
+        fill: currentColor;
+    }
+}
+
+.header__nav-list-link {
+    & + :hover::after & + :focus::after {
+        background: $accent-color;
+    }
 }
 
 .header__nav-list-item:not(:last-child) {
     margin-right: 50px;
 }
 
-.header__nav-list-item .header__nav-list-link.current {
+.header__nav-list-link.current {
     color: $accent-color;
     background: transparent;
-}
-
-.header__nav-list-item .header__nav-list-link.current::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color:$accent-color;
-    border-radius: 2px;
-    left: 0;
-    top: 44px;
-}
-
-.header__nav-list-link {
-    transition: $transition-color;
-}
-
-.header__nav-list-link:hover::after
-.header__nav-list-link:focus::after {
-    background: $accent-color;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: $accent-color;
+        border-radius: 2px;
+        left: 0;
+        top: 44px;
+    }
 }
 
 .header__links {
     display: flex;
     margin-left: auto;
+    li:not(:last-child) {
+        margin-right: 30px;
+    }
 }
-
-.header__links li:not(:last-child) {
-    margin-right: 30px;
-}
-
-/* header__links-item{} */
 
 .header__link {
     display: flex;
@@ -88,12 +81,14 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: $transition-fill, $transition-color;
-}
-
-.header__link:hover,
-.header__link:focus{
-    color:$accent-color;
-    fill: currentColor;
+    &:hover {
+        color: $accent-color;
+        fill: currentColor;
+    }
+    &:focus {
+        color: $accent-color;
+        fill: currentColor;
+    }
 }
 
 .header__link-icon {

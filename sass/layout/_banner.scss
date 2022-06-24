@@ -1,4 +1,3 @@
-
 /* banner */
 
 .banner {
@@ -9,18 +8,18 @@
     background-color: $primary-bg-color;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/banner.jpg');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/banner.jpg");
     text-align: center;
-}
-
-.banner__title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $light-color;
+    .banner__title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $light-color;
+    }
 }
 
 .banner__btn {
@@ -31,16 +30,17 @@
     font-size: 16px;
     line-height: 1.8;
     color: $light-color;
-    background:$accent-color;
+    background: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
     margin-top: 30px;
     border: none;
     transition: $transition-bg;
-}
-
-.banner__btn:hover,
-.banner__btn:focus {
-    background: #188CE8;
+    &:hover {
+        background: #188ce8;
+    }
+    &:focus {
+        background: #188ce8;
+    }
 }

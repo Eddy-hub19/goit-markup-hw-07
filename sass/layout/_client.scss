@@ -1,18 +1,18 @@
-
 /* client */
 
 .client {
     padding-top: $padding-section;
     padding-bottom: $padding-section;
     background: white;
+    .client-list {
+        display: flex;
+    }
 }
 
-.client-list {
-    display: flex;
-}
-
-.client__list-item:not(:last-child) {
-    margin-right: 30px;
+.client__list-item {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .client__list-link {
@@ -25,10 +25,12 @@
     border-radius: 4px;
     fill: $social-link-fill;
     transition: $transition-fill, $transition-border;
-}
-
-.client__list-link:hover,
-.client__list-link:focus {
-    border-color:$accent-color;
-    fill:$accent-color;
+    &:hover {
+		border-color: $accent-color;
+		fill: $accent-color;
+	}
+	&:focus {
+		border-color: $accent-color;
+		fill: $accent-color;
+	}
 }

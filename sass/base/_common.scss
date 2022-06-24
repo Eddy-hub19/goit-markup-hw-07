@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -14,10 +14,12 @@ img {
     padding: 0 15px;
 }
 
-section h2 {
-    color: $title-text-color;
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
-    letter-spacing: 0.03em;
+section {
+    & h2 {
+        color: $title-text-color;
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
 }

@@ -1,8 +1,7 @@
-
 /* team */
 
 .team {
-    background: #F5F4FA;
+    background: #f5f4fa;
     padding-top: $padding-section;
     padding-bottom: $padding-section;
 }
@@ -22,8 +21,10 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.team__list-item:not(:last-child) {
-    margin-right: 30px;
+.team__list-item {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .team-wrap {
