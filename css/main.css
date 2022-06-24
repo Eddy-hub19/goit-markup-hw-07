@@ -88,12 +88,6 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__nav-list-link:hover,
-.header__nav-list-link:focus {
-  color: #2196f3;
-  fill: currentColor;
-}
-
 .header__logo-text {
   color: #000;
 }
@@ -114,6 +108,14 @@ a {
   position: relative;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__nav-list-link:hover {
+  color: #2196f3;
+  fill: currentColor;
+}
+.header__nav-list-link:focus {
+  color: #2196f3;
+  fill: currentColor;
 }
 
 .header__nav-list-item:not(:last-child) {
